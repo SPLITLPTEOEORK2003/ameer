@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = "M";
 var adminprefix = 'M'
 
-const developers = ["515190076347645963","id"]
+const developers = ["515190076347645963"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -38,4 +38,4 @@ if (message.content.startsWith(adminprefix + 'av')) {
 });
 
 
-client.login(process.env.TOKEN);// لا تغير فيها شيء
+client.login(process.env.TOKEN2);// لا تغير فيها شيء
