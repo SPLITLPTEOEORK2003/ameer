@@ -1,1 +1,2 @@
-# ameer
+worker: node bot.js
+
