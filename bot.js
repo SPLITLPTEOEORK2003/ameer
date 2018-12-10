@@ -8,7 +8,7 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'setg')) {
+  if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
       message.channel.send(`✅`)
   } else 
@@ -38,4 +38,4 @@ if (message.content.startsWith(adminprefix + 'av')) {
 });
 
 
-client.login(process.env.TOKEN2);// لا تغير فيها شيء
+client.login(process.env.TOKEN);// لا تغير فيها شيء
